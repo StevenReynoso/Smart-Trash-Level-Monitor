@@ -107,7 +107,7 @@ LCD SCL	A5
 🚀 Future Improvements
 
     📡 IoT Integration → Send data to a cloud platform for remote monitoring.
-    🔔 Buzzer Alert System → Notify users when the bin is full.
+    🔔 Buzzer or small light Alert System → Notify users when the bin is full.
 
 🏆 Author
 
