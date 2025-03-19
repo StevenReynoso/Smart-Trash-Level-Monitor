@@ -1,0 +1,63 @@
+#include <LiquidCrystal_I2C.h>
+
+LiquidCrystal_I2C lcd(0x27, 20, 4);
+// set the LCD address to 0x27 for a 16-char, 2-line display
+
+float cm;
+float inches;
+float trash;
+
+long readUltrasonicDistance(int triggerPin, int echoPin)
+{
+    pinMode(triggerPin, OUTPUT);  // Clear the trigger
+    digitalWrite(triggerPin, LOW);
+    delayMicroseconds(2);
+    // Sets the trigger pin to HIGH state for 10 microseconds
+    digitalWrite(triggerPin, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(triggerPin, LOW);
+    pinMode(echoPin, INPUT);
+    // Reads the echo pin, and returns
+    // the sound wave travel time in microseconds
+    return pulseIn(echoPin, HIGH);
+}
+
+void setup() {
+    Serial.begin(9600);
+    lcd.init();  // Initialize the LCD
+    lcd.backlight();
+    lcd.print("Setup Complete");
+    delay(3000);
+    lcd.clear();
+}
+
+void loop() {
+    // Convert ultrasonic sensor readings to cm and inches
+    cm = 0.0344 / 2 * readUltrasonicDistance(6, 7);
+    inches = cm / 2.54;
+
+    // Ensure inches stay within the valid range of 2 to 132 inches
+    if (inches < 2) inches = 2;
+    if (inches > 132) inches = 132;
+
+    // Correct formula for calculating trash percentage
+    trash = ((132.0 - inches) / (132.0 - 2.0)) * 100.0;
+
+    // Print values to Serial Monitor for debugging
+    Serial.print("cm: ");
+    Serial.print(cm, 1);
+    Serial.print(" | inches: ");
+    Serial.print(inches, 1);
+    Serial.print(" | Trash %: ");
+    Serial.println(trash, 1);
+
+    // Display trash percentage on LCD
+    lcd.setCursor(0, 0);
+    lcd.print("Trash: ");
+    lcd.setCursor(7, 0);
+    lcd.print(trash, 1);
+    lcd.print("%");
+
+    delay(2000);
+    lcd.clear();
+}
