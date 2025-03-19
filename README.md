@@ -101,7 +101,8 @@ LCD SCL	A5
 
 🚀 
 
-![Image](https://github.com/user-attachments/assets/23db91fd-ece9-4c9e-843c-dd9161664a7b)
+![image](https://github.com/user-attachments/assets/24bef114-0a20-4298-bebe-c680a1d70c65)
+
 
 🚀 Future Improvements
 
