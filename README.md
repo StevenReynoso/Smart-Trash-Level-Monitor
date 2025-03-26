@@ -39,8 +39,12 @@ This project uses 3  **HC-SR04 ultrasonic sensor** to measure the height of tras
 <div class="overflow-x-auto contain-inline-size">
 Component | Arduino Pin
 -- | --
-HC-SR04 Trigger | 6
-HC-SR04 Echo | 7
+(1) HC-SR04 Trigger | 6
+(1) HC-SR04 Echo | 7
+(2) HC-SR04 Trigger | 8
+(2) HC-SR04 Echo | 9
+(3) HC-SR04 Trigger | 10
+(3) HC-SR04 Echo | 11
 LCD SDA | A4
 LCD SCL | A5
 
@@ -83,10 +87,14 @@ LCD SCL | A5
 🛠️ Installation & Setup
 1️⃣ Wiring Instructions
 Component	Arduino Pin
-HC-SR04 Trigger	6
-HC-SR04 Echo	7
-LCD SDA	A4
-LCD SCL	A5
+(1) HC-SR04 Trigger | 6
+(1) HC-SR04 Echo | 7
+(2) HC-SR04 Trigger | 8
+(2) HC-SR04 Echo | 9
+(3) HC-SR04 Trigger | 10
+(3) HC-SR04 Echo | 11
+LCD SDA | A4
+LCD SCL | A5
 2️⃣ Uploading the Code
 
     Install Arduino IDE (if not installed).
