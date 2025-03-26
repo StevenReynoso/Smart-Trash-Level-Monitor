@@ -63,51 +63,8 @@ LCD SCL | A5
 <li data-start="2396" data-end="2462">Open the <strong data-start="2408" data-end="2426">Serial Monitor</strong> (<code data-start="2428" data-end="2439">9600 baud</code>) to see live readings.</li>
 </ol>
 <h2 data-start="2464" data-end="2482">📸 Project Demo</h2>
-<p data-start="2483" data-end="2547">🚀 Coming soon! (Include an image or GIF of the working project)</p>
-<h2 data-start="2549" data-end="2574">🚀 Future Improvements</h2>
-<ul data-start="2575" data-end="2805">
-<li data-start="2575" data-end="2654">📡 <strong data-start="2580" data-end="2599">IoT Integration</strong> → Send data to a cloud platform for remote monitoring.</li>
-<li data-start="2655" data-end="2720">🔔 <strong data-start="2660" data-end="2683">Buzzer Alert System</strong> → Notify users when the bin is full.</li>
-<li data-start="2721" data-end="2805">📊 <strong data-start="2726" data-end="2750">OLED Display Support</strong> → Improve visualization with graphical representation.</li>
-</ul>
-<hr data-start="2807" data-end="2810">
-<h2 data-start="2812" data-end="2824">🏆 Author</h2>
-<p data-start="2825" data-end="2957">👨‍💻 <strong data-start="2831" data-end="2849">Steven Reynoso</strong><br data-start="2849" data-end="2852">
-🔗 GitHub: <a data-start="2863" data-end="2923" rel="noopener" target="_new" href="https://github.com/StevenReynoso">github.com/StevenReynoso</a><br data-start="2923" data-end="2926">
-📩 Contact: [Your Email Here]</p>
-<p data-start="2959" data-end="3082">💡 <em data-start="2962" data-end="3010">Feel free to fork this project and contribute!</em><br data-start="3010" data-end="3013">
-📌 <strong data-start="3016" data-end="3078">If you like this project, don't forget to ⭐ star the repo!</strong> ⭐</p><!--EndFragment-->
-</body>
-</html>132 inches → Bin is empty (0%)
-    2 inches → Bin is full (100%)
 
-    The fill percentage is displayed on the LCD screen and printed to the Serial Monitor.
-    The system updates every 2 seconds for continuous monitoring.
-
-🛠️ Installation & Setup
-1️⃣ Wiring Instructions
-Component	Arduino Pin
-(1) HC-SR04 Trigger | 6
-(1) HC-SR04 Echo | 7
-(2) HC-SR04 Trigger | 8
-(2) HC-SR04 Echo | 9
-(3) HC-SR04 Trigger | 10
-(3) HC-SR04 Echo | 11
-LCD SDA | A4
-LCD SCL | A5
-2️⃣ Uploading the Code
-
-    Install Arduino IDE (if not installed).
-    Install the required library for I2C LCD:
-        Open Arduino IDE → Go to Sketch → Include Library → Manage Libraries.
-        Search for LiquidCrystal_I2C and install it.
-    Connect the Arduino via USB.
-    Upload the code in smart_trash_monitor.ino.
-    Open the Serial Monitor (9600 baud) to see live readings.
-
-📸 Project Demo
-
-🚀 
+https://wokwi.com/projects/426241176392974337
 
 ![image](https://github.com/user-attachments/assets/858a351e-c14b-46f9-acb2-a371c10d11b7)
 
