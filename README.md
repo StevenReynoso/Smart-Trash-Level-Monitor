@@ -3,7 +3,7 @@
 🚀 **An Arduino-based ultrasonic sensor system that monitors trash bin levels and displays the fill percentage on an LCD.**
 
 ## 📌 Project Overview
-This project uses an **HC-SR04 ultrasonic sensor** to measure the height of trash inside a bin. The **Arduino** processes the sensor data, calculates the fill percentage, and displays it on a **LiquidCrystal I2C LCD screen**. Additionally, it logs the readings to the **Serial Monitor** for real-time debugging.
+This project uses 3  **HC-SR04 ultrasonic sensor** to measure the height of trash inside a bin. The **Arduino** processes the sensor data, calculates the fill percentage, and displays it on a **LiquidCrystal I2C LCD screen**. Additionally, it logs the readings to the **Serial Monitor** for real-time debugging.
 
 ## 🎯 Features
 ✅ **Real-time trash level detection** using an ultrasonic sensor  
@@ -15,12 +15,12 @@ This project uses an **HC-SR04 ultrasonic sensor** to measure the height of tras
 ## 🔧 Hardware Components
 - 🖥 **Arduino Uno** (or any compatible board)
 - 📟 **16x2 I2C LCD Display**
-- 📡 **HC-SR04 Ultrasonic Sensor**
+- 📡 **3 HC-SR04 Ultrasonic Sensor**
 - 🔌 **Jumper Wires**
 - 🔋 **Power Supply**
 
 ## 📜 How It Works
-1. The **HC-SR04 ultrasonic sensor** measures the distance from the sensor to the top of the trash.
+1. The **HC-SR04 ultrasonic sensors** measure the distance from the sensors to the top of the trash, and each sensors travel time in microseconds is then used for the average calculation of room thats left in trash bin.
 2. The distance is converted into **inches and centimeters**.
 3. The fill percentage is calculated using:
    ```cpp
